@@ -1,0 +1,257 @@
+/*
+Theme Name:
+Template:
+Author: Sébastien Chandonay & Cyril Tissot (Studio Montana)
+Author URI: http://www.seb-c.com
+Description: Website's theme
+Version: 1.0.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:
+*/
+
+/* ----------------------------------------------------------- */
+/*												Reset
+/* ----------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%; /* 1em = 10px */
+	font-size: calc(1em * .625);
+	border: none;
+}
+body{
+	background: #ffffff;
+	color: #000000;
+	font-family: Arial, sans-serif;
+	font-size: 1.4em; /* equiv 14px */
+	line-height: 1.5; /* equiv 15px */
+	overflow-x: hidden;
+}
+header, main, menu, nav, section, article, form, aside, datalist, details, dialog, figure, figcaption, footer, svg{ display: block; }
+audio, canvas, progress, video{ display: inline-block; }
+abbr, mark, meter, time, output{ display: inline; }
+p, ul, ol, dl, blockquote, pre, td, th, label, input, textarea, select, button, hr{
+}
+ol, ul{
+	list-style: none;
+}
+img{
+	vertical-align: top; /* remove white space below image */
+	max-width: 100%;
+	height: auto;
+	border: none;
+}
+form{
+	width: 100%;
+	margin: 0;
+}
+table{
+	table-layout: fixed;
+	border-collapse: collapse;
+	vertical-align: top;
+}
+table, tr, td{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	border: none;
+	background: none;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+input, textarea, select, button, label{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	resize : none;
+	border: none;
+	display: block;
+	vertical-align: middle;
+}
+blockquote, code, pre, svg {
+	height: auto;
+	max-width: 100%;
+}
+.screen-reader-text{
+	position: absolute;
+	left: -5000000px;
+}
+
+/* ----------------------------------------------------------- */
+/*												Framework
+/* ----------------------------------------------------------- */
+
+/**
+* clear
+*/
+.clearfix, .clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* ----------------------------------------------------------- */
+/*												Typography
+/* ----------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6{
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+	border: none;
+	font-weight: inherit;
+	display: block;
+	width: 100%;
+}
+p{
+	text-align: left;
+	white-space: normal;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+mark { /*highlight*/
+	background: #ffff00;
+}
+sup, sub{
+	vertical-align: 0;
+	position: relative;
+}
+sup{
+	bottom: 1ex;
+}
+sub{
+	top: .5ex;
+}
+hr{
+	background-color: #000000;
+	border: 0;
+	height: 1px;
+	padding: 0;
+}
+
+/*::-webkit-input-placeholder {
+color: #ff0000;
+}
+::-moz-placeholder {
+color: #ff0000;
+}
+:-ms-input-placeholder {
+color: #ff0000;
+}
+::placeholder {
+color: #ff0000;
+}*/
+
+/* ----------------------------------------------------------- */
+/*												Layout
+/* ----------------------------------------------------------- */
+body{
+	background: #ffffff;
+	color: #000000;
+	text-align: left;
+}
+/*body.admin-bar{
+	top: 32px;
+}*/
+.page{
+	margin: 0 auto;
+	position: relative;
+	max-width: 100%;
+}
+
+/* ----------------------------------------------------------- */
+/*												Main content
+/* ----------------------------------------------------------- */
+main{
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+/* ----------------------------------------------------------- */
+/*												Flex
+/* ----------------------------------------------------------- */
+.ff-flex{
+	display: flex;
+	justify-content: center;/*center to container*/
+	align-items: center;
+}
+/* content align left */
+.ff-flex.flex-content-left{
+	justify-content: flex-start;/*left to container*/
+}
+/* content align right */
+.ff-flex.flex-content-right{
+	justify-content: flex-end;/*right to container*/
+}
+/* content align right */
+.ff-flex.flex-content-justify{
+	justify-content: space-between;/*right to container*/
+}
+/* content align top */
+.ff-flex.flex-items-top{
+	align-items: flex-start;
+}
+/* content align bottom */
+.ff-flex.flex-items-bottom{
+	align-items: flex-end;
+}
+/* content align stretch */
+.ff-flex.flex-items-stretch{
+	align-items: stretch;
+}
+/* flex row is horizontal axis (X) */
+.ff-flex.flex-row{
+	flex-flow: row wrap;
+	align-content: flex-start;/*_ only if wrap*/
+}
+/* flex column is vertical axis (Y) */
+.ff-flex.flex-column{
+	flex-flow: column wrap;
+	align-content: flex-start;/*_ only if wrap*/
+}
+/* flex child behaviour */
+.ff-flex .flex-self-item{
+	align-self: center;/*align-self overpass align-items*/
+}
+
+/* ----------------------------------------------------------- */
+/*												Align
+/* ----------------------------------------------------------- */
+.ff-alignright{
+	text-align: right;
+}
+.ff-aligncenter{
+	text-align: center;
+}
+.ff-alignleft{
+	text-align: left;
+}
+
+/* ----------------------------------------------------------- */
+/*												Width
+/* ----------------------------------------------------------- */
+.width1   { width: 1%; }
+.width2   { width: 2%; }
+.width3   { width: 3%; }
+.width5   { width: 5%; }
+.width10  { width: 10%; }
+.width20  { width: 20%; }
+.width25  { width: 25%; }
+.width30  { width: 30%; }
+.width33  { width: 33.333%; }
+.width40  { width: 40%; }
+.width45  { width: 45%; }
+.width49  { width: 49%; }
+.width50  { width: 50%; }
+.width60  { width: 60%; }
+.width66  { width: 66.666%; }
+.width70  { width: 70%; }
+.width75  { width: 75%; }
+.width80  { width: 80%; }
+.width90  { width: 90%; }
+.width100 { width: 100%; }
