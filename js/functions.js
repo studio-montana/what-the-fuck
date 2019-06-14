@@ -24,7 +24,7 @@
 	/**
 	 * Menu toggle
 	 */
-	$('.ff-hamburger-nav').on('click', function(e) {
+	$('.hamburger-nav').on('click', function(e) {
 		if ($("nav").hasClass("menu-toggle")) {
 			$("nav").removeClass("menu-toggle");
 		} else {
@@ -32,7 +32,7 @@
 		}
 	});
 
-  $('.ff-close-nav').on('click', function(e) {
+  $('.close-nav').on('click', function(e) {
     if ($("nav").hasClass("menu-toggle")) {
       $("nav").removeClass("menu-toggle");
     }
