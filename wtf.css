@@ -90,7 +90,7 @@ blockquote, code, pre, svg {
 /**
 * clear
 */
-.clearfix, .clearfix:after {
+.ff-clearfix, .ff-clearfix:after {
 	content: "";
 	display: block;
 	clear: both;
@@ -158,11 +158,6 @@ body{
 /*body.admin-bar{
 	top: 32px;
 }*/
-.page{
-	margin: 0 auto;
-	position: relative;
-	max-width: 100%;
-}
 
 /* ----------------------------------------------------------- */
 /*												Main content
@@ -235,23 +230,23 @@ main{
 /* ----------------------------------------------------------- */
 /*												Width
 /* ----------------------------------------------------------- */
-.width1   { width: 1%; }
-.width2   { width: 2%; }
-.width3   { width: 3%; }
-.width5   { width: 5%; }
-.width10  { width: 10%; }
-.width20  { width: 20%; }
-.width25  { width: 25%; }
-.width30  { width: 30%; }
-.width33  { width: 33.333%; }
-.width40  { width: 40%; }
-.width45  { width: 45%; }
-.width49  { width: 49%; }
-.width50  { width: 50%; }
-.width60  { width: 60%; }
-.width66  { width: 66.666%; }
-.width70  { width: 70%; }
-.width75  { width: 75%; }
-.width80  { width: 80%; }
-.width90  { width: 90%; }
-.width100 { width: 100%; }
+.ff-width1   { width: 1%; }
+.ff-width2   { width: 2%; }
+.ff-width3   { width: 3%; }
+.ff-width5   { width: 5%; }
+.ff-width10  { width: 10%; }
+.ff-width20  { width: 20%; }
+.ff-width25  { width: 25%; }
+.ff-width30  { width: 30%; }
+.ff-width33  { width: 33.333%; }
+.ff-width40  { width: 40%; }
+.ff-width45  { width: 45%; }
+.ff-width49  { width: 49%; }
+.ff-width50  { width: 50%; }
+.ff-width60  { width: 60%; }
+.ff-width66  { width: 66.666%; }
+.ff-width70  { width: 70%; }
+.ff-width75  { width: 75%; }
+.ff-width80  { width: 80%; }
+.ff-width90  { width: 90%; }
+.ff-width100 { width: 100%; }
