@@ -92,7 +92,7 @@ h6{
 /* ----------------------------------------------------------- */
 a, a:link{
 	text-decoration: none;
-	color: var(--gold); /*_ !! TO FIX ***/
+	color: var(--lightblue); /*_ !! TO FIX ***/
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 	cursor: pointer;
