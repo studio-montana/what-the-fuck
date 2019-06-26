@@ -185,7 +185,7 @@ main{
 }
 /* content align right */
 .ff-flex.flex-content-justify{
-	justify-content: space-between;/*right to container*/
+	justify-content: space-between;/*justify to container*/
 }
 /* content align top */
 .ff-flex.flex-items-top{

@@ -25,16 +25,16 @@
 	 * Menu toggle
 	 */
 	$('.hamburger-nav').on('click', function(e) {
-		if ($("nav").hasClass("menu-toggle")) {
-			$("nav").removeClass("menu-toggle");
+		if ($("header").hasClass("header-toggle")) {
+			$("header").removeClass("header-toggle");
 		} else {
-			$("nav").addClass("menu-toggle");
+			$("header").addClass("header-toggle");
 		}
 	});
 
   $('.close-nav').on('click', function(e) {
-    if ($("nav").hasClass("menu-toggle")) {
-      $("nav").removeClass("menu-toggle");
+    if ($("header").hasClass("header-toggle")) {
+      $("header").removeClass("header-toggle");
     }
   });
 
