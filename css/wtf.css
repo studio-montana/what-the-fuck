@@ -313,6 +313,22 @@ main{
 }
 
 /**
+ * Square
+ */
+.fw-square{
+	position: relative;
+	width: 100%;
+	padding-top: 100%;
+}
+.fw-square > .fw-square-content{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/**
  * Backgrounds
  */
 .fw-bg-cover{
