@@ -16,26 +16,26 @@
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
 </div>
-<span>Par défaut : justify-content: flex-start ; align-items: stretch</span>
+<div>Par défaut : start / stretch (justify-content: flex-start ; align-items: stretch)</div>
 
 <hr />
 
-<h2>Flex left / top</h2>
-<div class="ff-flex flex-items-top -- fw-width-600 fw-min-height-100">
+<h2>Flex start / start</h2>
+<div class="ff-flex flex-items-start -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
 </div>
 
-<h2>Flex left / center</h2>
+<h2>Flex start / center</h2>
 <div class="ff-flex flex-items-center -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
 </div>
 
-<h2>Flex left/bottom</h2>
-<div class="ff-flex flex-items-bottom -- fw-width-600 fw-min-height-100">
+<h2>Flex start / end</h2>
+<div class="ff-flex flex-items-end -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
@@ -43,8 +43,8 @@
 
 <hr />
 
-<h2>Flex center / top</h2>
-<div class="ff-flex flex-content-center flex-items-top -- fw-width-600 fw-min-height-100">
+<h2>Flex center / start</h2>
+<div class="ff-flex flex-content-center flex-items-start -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
@@ -57,8 +57,8 @@
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
 </div>
 
-<h2>Flex center / bottom</h2>
-<div class="ff-flex flex-content-center flex-items-bottom -- fw-width-600 fw-min-height-100">
+<h2>Flex center / end</h2>
+<div class="ff-flex flex-content-center flex-items-end -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
@@ -66,22 +66,22 @@
 
 <hr />
 
-<h2>Flex right / /top</h2>
-<div class="ff-flex flex-content-right flex-items-top -- fw-width-600 fw-min-height-100">
+<h2>Flex end / start</h2>
+<div class="ff-flex flex-content-end flex-items-start -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
 </div>
 
-<h2>Flex right / center</h2>
-<div class="ff-flex flex-content-right flex-items-center -- fw-width-600 fw-min-height-100">
+<h2>Flex end / center</h2>
+<div class="ff-flex flex-content-end flex-items-center -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
 </div>
 
-<h2>Flex right / bottom</h2>
-<div class="ff-flex flex-content-right flex-items-bottom -- fw-width-600 fw-min-height-100">
+<h2>Flex end / end</h2>
+<div class="ff-flex flex-content-end flex-items-end -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
@@ -89,15 +89,8 @@
 
 <hr />
 
-<h2>Flex justify / top</h2>
-<div class="ff-flex flex-content-justify flex-items-top -- fw-width-600 fw-min-height-100">
-	<div class="fw-width-200 fw-min-height-10">item 1</div>
-	<div class="fw-width-100 fw-min-height-50">item 2</div>
-	<div class="fw-width-150 fw-min-height-25">item 3</div>
-</div>
-
-<h2>Flex space around / top</h2>
-<div class="ff-flex flex-content-around flex-items-top -- fw-width-600 fw-min-height-100">
+<h2>Flex justify / start</h2>
+<div class="ff-flex flex-content-justify flex-items-start -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
@@ -106,91 +99,136 @@
 <hr />
 
 <h2>Flex self items</h2>
-<div class="ff-flex flex-items-top -- fw-width-600 fw-min-height-100">
-	<div class="flex-self-top -- fw-width-200 fw-min-height-10">self top</div>
+<div class="ff-flex flex-items-center -- fw-width-600 fw-min-height-100">
+	<div class="flex-self-start -- fw-width-200 fw-min-height-10">self start</div>
 	<div class="flex-self-center -- fw-width-100 fw-min-height-50">self center</div>
-	<div class="flex-self-bottom -- fw-width-150 fw-min-height-25">self bottom</div>
+	<div class="flex-self-end -- fw-width-150 fw-min-height-25">self end</div>
 	<div class="flex-self-stretch -- fw-width-150 fw-min-height-25">self stretch</div>
 </div>
 
 <hr />
 
 <h2>Flex direction : row</h2>
-<div class="ff-flex flex-row flex-items-top -- fw-width-600 fw-min-height-100">
+<div class="ff-flex flex-row -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
 	<div class="fw-width-100 fw-min-height-50">item 2</div>
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
 	<div class="fw-width-200 fw-min-height-10">item 4</div>
 </div>
-<span>Par défaut : justify-content: left ; align-items: stretch ; align-content: flex-start<br>
-	!!! align-content effectif uniquement si flex-wrap: wrap</span>
+<div>Par défaut : justify-content: flex-start ; align-items: stretch ; align-content: flex-start<br>!!! align-content uniquement si flex-wrap: wrap</div>
 
-	<h2>Flex direction : row / align-content: bottom</h2>
-	<div class="ff-flex flex-row flex-items-top -- fw-width-600 fw-min-height-100" style="align-content: flex-end;">
-		<div class="fw-width-200 fw-min-height-10">item 1</div>
-		<div class="fw-width-100 fw-min-height-50">item 2</div>
-		<div class="fw-width-150 fw-min-height-25">item 3</div>
-		<div class="fw-width-200 fw-min-height-10">item 4</div>
+<h2>Flex direction : row / align-content: flex-end</h2>
+<div class="ff-flex flex-row align-end -- fw-width-600 fw-min-height-100">
+	<div class="fw-width-200 fw-min-height-10">item 1</div>
+	<div class="fw-width-100 fw-min-height-50">item 2</div>
+	<div class="fw-width-150 fw-min-height-25">item 3</div>
+	<div class="fw-width-200 fw-min-height-10">item 4</div>
+</div>
+
+<h2>Flex direction : row / align-content: center</h2>
+<div class="ff-flex flex-row align-center -- fw-width-600 fw-min-height-100">
+	<div class="fw-width-200 fw-min-height-10">item 1</div>
+	<div class="fw-width-100 fw-min-height-50">item 2</div>
+	<div class="fw-width-150 fw-min-height-25">item 3</div>
+	<div class="fw-width-200 fw-min-height-10">item 4</div>
+</div>
+
+<h2>Flex direction : row / align-content: space-between</h2>
+<div class="ff-flex flex-row align-justify -- fw-width-600 fw-min-height-100">
+	<div class="fw-width-200 fw-min-height-10">item 1</div>
+	<div class="fw-width-100 fw-min-height-50">item 2</div>
+	<div class="fw-width-150 fw-min-height-25">item 3</div>
+	<div class="fw-width-200 fw-min-height-10">item 4</div>
+</div>
+
+<h2>Flex direction : row / align-content: stretch</h2>
+<div class="ff-flex flex-row -- fw-width-600 fw-min-height-100" style="align-content: stretch;">
+	<div class="fw-width-200 fw-min-height-10">item 1</div>
+	<div class="fw-width-100 fw-min-height-50">item 2</div>
+	<div class="fw-width-150 fw-min-height-25">item 3</div>
+	<div class="fw-width-200 fw-min-height-10">item 4</div>
+</div>
+
+<hr />
+
+<h2>Flex direction : column</h2>
+<div class="ff-flex flex-column -- fw-width-600 fw-min-height-100" style="height:120px;">
+	<div class="fw-min-height-25">item 1</div>
+	<div class="fw-min-height-75">item 2</div>
+	<div class="fw-min-height-25">item 3</div>
+	<div class="fw-min-height-50">item 4</div>
+	<div class="fw-min-height-25">item 5</div>
+	<div class="fw-min-height-10">item 6</div>
+</div>
+<div>Par défaut : justify-content: flex-start ; align-items: stretch ; align-content: flex-start<br>!!! align-content uniquement si flex-wrap: wrap. !!! Direction cross axis.</div>
+
+<h2>Flex direction : column / align-content: flex-end</h2>
+<div class="ff-flex flex-column align-end -- fw-width-600 fw-min-height-100" style="height:120px;">
+	<div class="fw-min-height-25">item 1</div>
+	<div class="fw-min-height-75">item 2</div>
+	<div class="fw-min-height-25">item 3</div>
+	<div class="fw-min-height-50">item 4</div>
+	<div class="fw-min-height-25">item 5</div>
+	<div class="fw-min-height-10">item 6</div>
+</div>
+
+<h2>Flex direction : column / align-content: space-between</h2>
+<div class="ff-flex flex-column align-justify -- fw-width-600 fw-min-height-100" style="height:120px;">
+	<div class="fw-min-height-25">item 1</div>
+	<div class="fw-min-height-75">item 2</div>
+	<div class="fw-min-height-25">item 3</div>
+	<div class="fw-min-height-50">item 4</div>
+	<div class="fw-min-height-25">item 5</div>
+	<div class="fw-min-height-10">item 6</div>
+</div>
+
+<h2>Flex direction : column / align-content: stretch</h2>
+<div class="ff-flex flex-column align-stretch -- fw-width-600 fw-min-height-100" style="height:120px;">
+	<div class="fw-min-height-25">item 1</div>
+	<div class="fw-min-height-75">item 2</div>
+	<div class="fw-min-height-25">item 3</div>
+	<div class="fw-min-height-50">item 4</div>
+	<div class="fw-min-height-25">item 5</div>
+	<div class="fw-min-height-10">item 6</div>
+</div>
+<div>Comportement stretch : supprimer les infos de largeur.</div>
+
+<hr />
+
+<h2>Flex imbriqués</h2>
+<div class="ff-flex flex-content-center flex-items-center -- fw-width-600 fw-min-height-100">
+	<div class="ff-flex flex-content-center flex-items-center -- fw-width-200 fw-min-height-50">item 1</div>
+	<div class="ff-flex flex-content-center flex-items-center -- fw-width-200 fw-min-height-75">
+		<div class="fw-width-50 fw-min-height-10"></div>
+		<div class="fw-width-75 fw-min-height-50">row</div>
+		<div class="fw-width-50 fw-min-height-25"></div>
 	</div>
-
-	<h2>Flex direction : row / align-content: center</h2>
-	<div class="ff-flex flex-row flex-items-top -- fw-width-600 fw-min-height-100" style="align-content: center;">
-		<div class="fw-width-200 fw-min-height-10">item 1</div>
-		<div class="fw-width-100 fw-min-height-50">item 2</div>
-		<div class="fw-width-150 fw-min-height-25">item 3</div>
-		<div class="fw-width-200 fw-min-height-10">item 4</div>
+	<div class="ff-flex flex-column -- fw-width-200 fw-min-height-75">
+		<div class="fw-width-100 fw-min-height-10"></div>
+		<div class="fw-width-75 fw-min-height-25">column</div>
+		<div class="fw-width-50 fw-min-height-25"></div>
 	</div>
+</div>
 
-	<h2>Flex direction : row / align-content: justify</h2>
-	<div class="ff-flex flex-row flex-items-top -- fw-width-600 fw-min-height-100" style="align-content: space-between;">
-		<div class="fw-width-200 fw-min-height-10">item 1</div>
-		<div class="fw-width-100 fw-min-height-50">item 2</div>
-		<div class="fw-width-150 fw-min-height-25">item 3</div>
-		<div class="fw-width-200 fw-min-height-10">item 4</div>
-	</div>
+<hr />
 
-	<h2>Flex direction : row / align-content: stretch</h2>
-	<div class="ff-flex flex-row -- fw-width-600 fw-min-height-100" style="align-content: stretch;">
-		<div class="fw-width-200 fw-min-height-10">item 1</div>
-		<div class="fw-width-100 fw-min-height-50">item 2</div>
-		<div class="fw-width-150 fw-min-height-25">item 3</div>
-		<div class="fw-width-200 fw-min-height-10">item 4</div>
-	</div>
-
-	<hr />
-
-	<h2>Flex direction : column</h2>
-	<div class="ff-flex flex-column -- fw-width-600 fw-min-height-100" style="height:120px; align-content: flex-end;">
-		<div class="fw-width-150 fw-min-height-25">item 1</div>
-		<div class="fw-width-100 fw-min-height-75">item 2</div>
-		<div class="fw-width-150 fw-min-height-25">item 3</div>
-		<div class="fw-width-200 fw-min-height-50">item 4</div>
-		<div class="fw-width-75 fw-min-height-25">item 5</div>
-		<div class="fw-width-100 fw-min-height-10">item 6</div>
-	</div>
-	<span>Par défaut : justify-content: left ; align-items: stretch ; align-content: flex-start<br>
-		!!! align-content effectif uniquement si flex-wrap: wrap</span>
-
-		<hr />
-
-		<h2>Flex imbriqués</h2>
-		<div class="ff-flex flex-content-center flex-items-center -- fw-width-600 fw-min-height-100">
-			<div class="ff-flex flex-content-center flex-items-center -- fw-width-200 fw-min-height-50">item 1</div>
-			<div class="ff-flex flex-content-center flex-items-center -- fw-width-200 fw-min-height-75">
-				<div class="fw-width-50 fw-min-height-10"></div>
-				<div class="fw-width-75 fw-min-height-50">row</div>
-				<div class="fw-width-50 fw-min-height-25"></div>
-			</div>
-			<div class="ff-flex flex-column -- fw-width-200 fw-min-height-75">
-				<div class="fw-width-100 fw-min-height-10"></div>
-				<div class="fw-width-75 fw-min-height-25">column</div>
-				<div class="fw-width-50 fw-min-height-25"></div>
-			</div>
+<h2>Flex imbriqués</h2>
+<div class="ff-flex -- fw-width-600 fw-min-height-300">
+	<div class="fw-max-witdh-50">Poêles à bois</div>
+	<div class="fw-max-witdh-50">
+		<div class="ff-flex -- fw-height-50">
+			<div class="fw-max-witdh-50">1</div>
+			<div class="fw-max-witdh-50" style="background-color: #fa412d; color:#fff;">Poêles à bois</div>
 		</div>
+		<div class="ff-flex -- fw-height-50">
+			<div class="fw-max-witdh-50" style="background-color: #000; color:#fff;">Poêles à bois</div>
+			<div class="fw-max-witdh-50">4</div>
+		</div>
+	</div>
+</div>
 
-
-		<!-- scripts -->
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="../../js/wtf.js"></script>
-	</body>
-	</html>
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../../js/wtf.js"></script>
+</body>
+</html>
