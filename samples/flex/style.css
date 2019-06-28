@@ -13,51 +13,11 @@ Text Domain:
 hr{
 	margin: 24px 0;
 }
-
 .fw-flex{
 	background: rgba(162, 186, 158, 0.5);
 	border: 1px dashed rgba(162, 186, 158, 0.8);
 }
-
 .fw-flex > .fw-flex-item{
 	border: 1px dashed rgba(28, 164, 255, 0.5); 
 	background: rgba(28, 164, 255, 0.2);
 }
-/*
-.fw-flex > .fw-flex-item:nth-child(1){
-	background: #f59542;
-}
-.fw-flex > .fw-flex-item:nth-child(2){
-	background: #4296f5;
-}
-.fw-flex > .fw-flex-item:nth-child(3){
-	background: #f5425d;
-}
-.fw-flex > .fw-flex-item:nth-child(4){
-	background: #627d5e;
-}
-.fw-flex > .fw-flex-item:nth-child(5){
-	background: #907499;
-}
-.fw-flex > .fw-flex-item:nth-child(6){
-	background: #a32121;
-}
-.fw-flex > .fw-flex-item .fw-flex-item:nth-child(1){
-	background: #a32121;
-}
-.fw-flex > .fw-flex-item .fw-flex-item:nth-child(2){
-	background: #907499;
-}
-.fw-flex > .fw-flex-item .fw-flex-item:nth-child(3){
-	background: #627d5e;
-}
-.fw-flex > .fw-flex-item .fw-flex-item:nth-child(4){
-	background: #f5425d;
-}
-.fw-flex > .fw-flex-item .fw-flex-item:nth-child(5){
-	background: #4296f5;
-}
-.fw-flex > .fw-flex-item .fw-flex-item:nth-child(6){
-	background: #f59542;
-}
-*/
