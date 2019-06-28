@@ -321,6 +321,23 @@ main{
 }
 
 /**
+ * Backgrounds
+ */
+.fw-bg-cover{
+	background-attachment: scroll;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+}
+.fw-bg-cover.fw-bg-cover-fixed{
+	background-attachment: fixed;
+}
+
+/**
  * FW width/height
  */
 [class^="fw-max-witdh-"], [class*=" fw-max-witdh-"]{ width: 100%; }
