@@ -20,7 +20,7 @@ hr{
 }
 
 .fw-flex > .fw-flex-item{
-	border: 1px dashed rgba(28, 164, 255, 0.5); 
+	border: 1px dashed rgba(28, 164, 255, 0.5);
 	background: rgba(28, 164, 255, 0.2);
 }
 /*
