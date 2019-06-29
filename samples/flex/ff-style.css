@@ -30,30 +30,36 @@ hr{
 .ff-flex{
 	display: flex;
 }
+ /* align CONTENT inside FLexbox (main axis) :
+ justify-content: flex-start | flex-end | center | space-between | space-around */
 .ff-flex.flex-content-start{
-	justify-content: flex-start;/* CONTENT align START (main axis) */
+	justify-content: flex-start;/* START */
 }
 .ff-flex.flex-content-end{
-	justify-content: flex-end;/* CONTENT align END (main axis) */
+	justify-content: flex-end;/* END */
 }
 .ff-flex.flex-content-center{
-	justify-content: center;/* CONTENT align CENTER (main axis) */
+	justify-content: center;/* CENTER */
 }
 .ff-flex.flex-content-justify{
-	justify-content: space-between;/* CONTENT JUSTIFY (main axis) */
+	justify-content: space-between;/* JUSTIFY */
 }
+/* align ITEMS inside CONTENT (cross axis) :
+align-items: flex-start | flex-end | center | baseline | stretch */
 .ff-flex.flex-items-start{
-	align-items: flex-start;/* ITEMS align START inside flex container (cross axis) */
+	align-items: flex-start;/* START */
 }
 .ff-flex.flex-items-end{
-	align-items: flex-end;/* ITEMS align END inside flex container (cross axis) */
+	align-items: flex-end;/* END) */
 }
 .ff-flex.flex-items-center{
-	align-items: center;/* ITEMS align CENTER inside flex container (cross axis) */
+	align-items: center;/* CENTER */
 }
 .ff-flex.flex-items-stretch{
-	align-items: stretch;/* ITEMS STRETCH inside flex container (cross axis) */
+	align-items: stretch;/* STRETCH */
 }
+/* Flexbox main direction (row vs column) :
+flex-flow: <row | row-reverse | column | column-reverse> | <nowrap | wrap | wrap-reverse> */
 .ff-flex.flex-row{
 	flex-flow: row wrap;/* ROW direction (main axis) */
 	align-content: flex-start;/*_ only if wrap*/
@@ -62,9 +68,15 @@ hr{
 	flex-flow: column wrap;/* COLUMN direction (cross axis) */
 	align-content: flex-start;/*_ only if wrap*/
 }
+/* align LINES inside Flexbox (main axis) :
+align-content: flex-start | flex-end | center | space-between | space-around | stretch */
 .ff-flex.flex-row.align-end,
 .ff-flex.flex-column.align-end{
 	align-content: flex-end;
+}
+.ff-flex.flex-row.align-center,
+.ff-flex.flex-column.align-center{
+	align-content: center;
 }
 .ff-flex.flex-row.align-stretch,
 .ff-flex.flex-column.align-stretch{
@@ -74,19 +86,19 @@ hr{
 .ff-flex.flex-column.align-justify{
 	align-content: space-between;
 }
-
-/* override align-items property */
+/* single item OVERRIDE align-items property
+align-self: auto | flex-start | flex-end | center | baseline | stretch */
 .ff-flex > .flex-self-start{
-	align-self: flex-start; ;/* align-self TOP override align-items property */
+	align-self: flex-start; ;/* START */
 }
 .ff-flex > .flex-self-end{
-	align-self: flex-end;/* align-self BOTTOM */
+	align-self: flex-end; /* END */
 }
 .ff-flex > .flex-self-center{
-	align-self: center;/* align-self CENTER */
+	align-self: center; /* CENTER */
 }
 .ff-flex > .flex-self-stretch{
-	align-self: stretch;/* align-self STRETCH */
+	align-self: stretch; /* STRETCH */
 }
 
 /**

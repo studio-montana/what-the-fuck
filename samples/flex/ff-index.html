@@ -115,7 +115,8 @@
 	<div class="fw-width-150 fw-min-height-25">item 3</div>
 	<div class="fw-width-200 fw-min-height-10">item 4</div>
 </div>
-<div>Par défaut : justify-content: flex-start ; align-items: stretch ; align-content: flex-start<br>!!! align-content uniquement si flex-wrap: wrap</div>
+<div>Par défaut : justify-content: flex-start ; align-items: stretch ; align-content: flex-start</div>
+<div>align-content n'a pas d'effet quand la flexbox n'a qu'une seule ligne (nowrap).</div>
 
 <h2>Flex direction : row / align-content: flex-end</h2>
 <div class="ff-flex flex-row align-end -- fw-width-600 fw-min-height-100">
@@ -149,6 +150,14 @@
 	<div class="fw-width-200 fw-min-height-10">item 4</div>
 </div>
 
+<h2>Flex direction : row / example</h2>
+<div class="ff-flex flex-row flex-content-end align-center flex-items-end -- fw-width-600 fw-min-height-100">
+	<div class="fw-width-200 fw-min-height-10">item 1</div>
+	<div class="fw-width-100 fw-min-height-50">item 2</div>
+	<div class="fw-width-150 fw-min-height-25">item 3</div>
+	<div class="fw-width-200 fw-min-height-10">item 4</div>
+</div>
+
 <hr />
 
 <h2>Flex direction : column</h2>
@@ -160,7 +169,8 @@
 	<div class="fw-min-height-25">item 5</div>
 	<div class="fw-min-height-10">item 6</div>
 </div>
-<div>Par défaut : justify-content: flex-start ; align-items: stretch ; align-content: flex-start<br>!!! align-content uniquement si flex-wrap: wrap. !!! Direction cross axis.</div>
+<div>Par défaut : justify-content: flex-start ; align-items: stretch ; align-content: flex-start !!! Direction cross axis.</div>
+<div>align-content n'a pas d'effet quand la flexbox n'a qu'une seule ligne (nowrap).</div>
 
 <h2>Flex direction : column / align-content: flex-end</h2>
 <div class="ff-flex flex-column align-end -- fw-width-600 fw-min-height-100" style="height:120px;">
@@ -186,12 +196,12 @@
 <div class="ff-flex flex-column align-stretch -- fw-width-600 fw-min-height-100" style="height:120px;">
 	<div class="fw-min-height-25">item 1</div>
 	<div class="fw-min-height-75">item 2</div>
-	<div class="fw-min-height-25">item 3</div>
+	<div class="fw-width-50 fw-min-height-25">item 3</div>
 	<div class="fw-min-height-50">item 4</div>
 	<div class="fw-min-height-25">item 5</div>
 	<div class="fw-min-height-10">item 6</div>
 </div>
-<div>Comportement stretch : supprimer les infos de largeur.</div>
+<div>stretch n'a pas d'effet quand la largeur est spécifiée (item 3).</div>
 
 <hr />
 
