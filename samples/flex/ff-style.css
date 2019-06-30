@@ -33,40 +33,40 @@ hr{
  /* align CONTENT inside FLexbox (main axis) :
  justify-content: flex-start | flex-end | center | space-between | space-around */
 .ff-flex.flex-content-start{
-	justify-content: flex-start;/* START */
+	justify-content: flex-start; /* START */
 }
 .ff-flex.flex-content-end{
-	justify-content: flex-end;/* END */
+	justify-content: flex-end; /* END */
 }
 .ff-flex.flex-content-center{
-	justify-content: center;/* CENTER */
+	justify-content: center; /* CENTER */
 }
 .ff-flex.flex-content-justify{
-	justify-content: space-between;/* JUSTIFY */
+	justify-content: space-between; /* JUSTIFY */
 }
 /* align ITEMS inside CONTENT (cross axis) :
 align-items: flex-start | flex-end | center | baseline | stretch */
 .ff-flex.flex-items-start{
-	align-items: flex-start;/* START */
+	align-items: flex-start; /* START */
 }
 .ff-flex.flex-items-end{
-	align-items: flex-end;/* END) */
+	align-items: flex-end; /* END) */
 }
 .ff-flex.flex-items-center{
-	align-items: center;/* CENTER */
+	align-items: center; /* CENTER */
 }
 .ff-flex.flex-items-stretch{
-	align-items: stretch;/* STRETCH */
+	align-items: stretch; /* STRETCH */
 }
 /* Flexbox main direction (row vs column) :
 flex-flow: <row | row-reverse | column | column-reverse> | <nowrap | wrap | wrap-reverse> */
 .ff-flex.flex-row{
-	flex-flow: row wrap;/* ROW direction (main axis) */
-	align-content: flex-start;/*_ only if wrap*/
+	flex-flow: row wrap; /* ROW direction (main axis) */
+	align-content: flex-start; /*_ only if wrap*/
 }
 .ff-flex.flex-column{
-	flex-flow: column wrap;/* COLUMN direction (cross axis) */
-	align-content: flex-start;/*_ only if wrap*/
+	flex-flow: column wrap; /* COLUMN direction (cross axis) */
+	align-content: flex-start; /*_ only if wrap*/
 }
 /* align LINES inside Flexbox (main axis) :
 align-content: flex-start | flex-end | center | space-between | space-around | stretch */
@@ -89,7 +89,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 /* single item OVERRIDE align-items property
 align-self: auto | flex-start | flex-end | center | baseline | stretch */
 .ff-flex > .flex-self-start{
-	align-self: flex-start; ;/* START */
+	align-self: flex-start; ; /* START */
 }
 .ff-flex > .flex-self-end{
 	align-self: flex-end; /* END */

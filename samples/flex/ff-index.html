@@ -20,6 +20,36 @@
 
 <hr />
 
+<h2>Flex grow / shrink / basis</h2>
+<div class="ff-flex flex-content-justify -- fw-width-600 fw-min-height-25"  style="padding: 10px;">
+	<div class="ff-flex flex-content-center" style="flex: 1 1 auto;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+	<div class="ff-flex flex-content-center" style="flex: 1 1 auto;">Lorem ipsum dolor sit amet.</div>
+	<div class="ff-flex flex-content-center" style="flex: 1 1 auto;">Lorem ipsum.</div>
+</div>
+<div class="ff-flex flex-content-justify -- fw-width-600 fw-min-height-25"  style="padding: 10px;">
+	<div class="ff-flex flex-content-center" style="flex: 1 1 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div> <!-- 1 ÷ (1 + 1 + 1) = 1/3 -->
+	<div class="ff-flex flex-content-center" style="flex: 1 1 0;">Lorem ipsum dolor sit amet.</div> <!-- 1 ÷ (1 + 1 + 1) = 1/3 -->
+	<div class="ff-flex flex-content-center" style="flex: 1 1 0;">Lorem ipsum.</div> <!-- 1 ÷ (1 + 1 + 1) = 1/3 -->
+</div>
+<div class="ff-flex flex-content-justify -- fw-width-600 fw-min-height-25"  style="padding: 10px;">
+	<div class="ff-flex flex-content-center" style="flex: 2 1 0;">2</div> <!-- 2 ÷ (2 + 1 + 1) = 1/2 -->
+	<div class="ff-flex flex-content-center" style="flex: 1 1 0;">1</div> <!-- 1 ÷ (2 + 1 + 1) = 1/4 -->
+	<div class="ff-flex flex-content-center" style="flex: 1 1 0;">1</div> <!-- 1 ÷ (2 + 1 + 1) = 1/4 -->
+</div>
+<div class="ff-flex flex-content-justify -- fw-width-600 fw-min-height-25"  style="padding: 10px;">
+	<div class="ff-flex flex-content-center" style="flex: 4 1 0;">4</div> <!-- 4 ÷ (4 + 1 + 1) = 2/3 -->
+	<div class="ff-flex flex-content-center" style="flex: 1 1 0;">1</div> <!-- 1 ÷ (4 + 1 + 1) = 1/6 -->
+	<div class="ff-flex flex-content-center" style="flex: 1 1 0;">1</div> <!-- 1 ÷ (4 + 1 + 1) = 1/6 -->
+</div>
+<div class="ff-flex flex-content-justify -- fw-width-600 fw-min-height-25"  style="padding: 10px;">
+	<div class="ff-flex flex-content-center" style="flex: 0 1 20px;">4</div> <!-- 4 ÷ (4 + 1 + 1) = 2/3 -->
+	<div class="ff-flex flex-content-center" style="flex: 0 1 40px;">1</div> <!-- 1 ÷ (4 + 1 + 1) = 1/6 -->
+	<div class="ff-flex flex-content-center" style="flex: 0 1 60px;">1</div> <!-- 1 ÷ (4 + 1 + 1) = 1/6 -->
+</div>
+<div>Grow : définit la possibilité pour un item de grandir.<br>Shrink : définit la possibilité pour un item de rétrecir.<br>Basis : définit l'espace d'origine. basis: 0 (la taille du contenu n'est pas prix en compte lors de la répartition) basis: auto (la taille du contenu détermine la taille de l'élément) basis: valeur (valeur de base de l'élément)<br>https://la-cascade.io/layout-sur-12-colonnes-avec-flexbox/</div>
+
+<hr />
+
 <h2>Flex start / start</h2>
 <div class="ff-flex flex-items-start -- fw-width-600 fw-min-height-100">
 	<div class="fw-width-200 fw-min-height-10">item 1</div>
@@ -236,6 +266,7 @@
 		</div>
 	</div>
 </div>
+
 
 <!-- scripts -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
