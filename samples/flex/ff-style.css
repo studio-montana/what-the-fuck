@@ -101,6 +101,81 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch */
 	align-self: stretch; /* STRETCH */
 }
 
+/* ----------------------------------------------------------- */
+/*												Grid
+/* ----------------------------------------------------------- */
+/* GRID CONTAINER */
+.ff-grid{
+	display: grid;
+	/*grid-template-rows: 400px 20px 260px 20px 360px;
+	grid-template-rows: 1fr 20px 1fr 20px 1fr;*/
+	grid-template-columns: repeat(4, 150px); /* 4 cellules 150px | 1FR | 25% */
+	grid-template-rows: repeat(4, 1fr); /* 4 cellules 150px | 1FR | 25% */
+	grid-gap: 10px 20px; /*gouttière column row*/
+
+	background: rgba(162, 186, 158, 0.5);
+	border: 1px dashed rgba(162, 186, 158, 0.8);
+}
+
+.ff-grid > *{
+	border: 1px dashed rgba(28, 164, 255, 0.5);
+	background: rgba(28, 164, 255, 0.2);
+	overflow: hidden;
+}
+
+.ff-grid.justify-content-center{
+	justify-content: center; /* align GRID inside GRID-CONTAINER (main axis) : start | end | center | stretch | space-around | space-between | space-evenly */
+}
+.ff-grid.align-content-center{
+	align-content: center; /* align GRID inside GRID-CONTAINER (cross axis) : start | end | center | stretch | space-around | space-between | space-evenl y*/
+}
+
+.ff-grid.justify-items-center{
+	justify-items: center; /* align ITEMS inside CELLS (main axis) : start | end | center | stretch */
+}
+.ff-grid.align-items-center{
+	align-items: center; /* align ITEMS inside CELLS (cross axis) : start | end | center | stretch */
+}
+
+/* GRID ITEMS */
+.item{
+  align-self: start | end | center | stretch; /* align ITEMS inside CELLS (cross axis) : start | end | center | stretch */
+	justify-self: start | end | center | stretch;
+}
+
+.ff-grid .row1{
+	grid-row: 1;
+}
+.ff-grid .row2{
+	grid-row: 2;
+}
+.ff-grid .row3{
+	grid-row: 3;
+}
+.ff-grid .row4{
+	grid-row: 4;
+}
+
+.ff-grid .col1{
+	grid-column: 1;
+}
+.ff-grid .col2{
+	grid-column: 2;
+}
+.ff-grid .col3{
+	grid-column: 3;
+}
+.ff-grid .col4{
+	grid-column: 4;
+}
+
+.ff-grid .row1to3{
+	grid-row: 1/span 3; /*start cell 1 then spans 3 cells */
+}
+.ff-grid .col2to4{
+	grid-column: 2/span 2;
+}
+
 /**
  * FW width/height
  */
