@@ -230,7 +230,7 @@ header.masthead{
 	text-transform: normal;
 	color: var(--gold);
 	line-height: 1;
-	flex: 1 0 0;
+	flex: 1 1 0;
 	/*background: url('https://images.unsplash.com/photo-1454329001438-1752daa90420') no-repeat top left;
 		-webkit-text-fill-color: rgba(0,0,0,0.15);
 	    -webkit-background-clip: text;*/
@@ -243,11 +243,11 @@ nav.main-nav{
 	font-weight: 500;
 	padding: 0 0;
 	text-transform: uppercase;
-	flex: 0 0 auto;
+	flex: 1 1 0;
 	font-size: calc(1.2em / var(--base14)); /* equiv 24px */
 }
 nav.main-nav > ul{ /* Every ul */
-	background: #fff;
+	background: #ffff00;
 	margin: 0;
 }
 nav.main-nav > ul li{/* Every li */

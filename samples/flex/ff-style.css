@@ -10,6 +10,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:
 */
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 hr{
 	margin: 24px 0;
 }
@@ -25,81 +31,189 @@ hr{
 }
 
 /* ----------------------------------------------------------- */
-/*												Flex
+/*										 What the Flex
 /* ----------------------------------------------------------- */
-.ff-flex{
+.ff-flex {
+	display: -webkit-box;
 	display: flex;
 }
+
  /* align CONTENT inside FLexbox (main axis) :
  justify-content: flex-start | flex-end | center | space-between | space-around */
-.ff-flex.flex-content-start{
-	justify-content: flex-start; /* START */
+.ff-flex.justify-content-start {
+	-webkit-box-pack: start;
+	        justify-content: flex-start; /* START */
 }
-.ff-flex.flex-content-end{
-	justify-content: flex-end; /* END */
+.ff-flex.justify-content-end {
+	-webkit-box-pack: end;
+	        justify-content: flex-end; /* END */
 }
-.ff-flex.flex-content-center{
-	justify-content: center; /* CENTER */
+.ff-flex.justify-content-center {
+	-webkit-box-pack: center;
+	        justify-content: center; /* CENTER */
 }
-.ff-flex.flex-content-justify{
-	justify-content: space-between; /* JUSTIFY */
+.ff-flex.justify-content-between {
+	-webkit-box-pack: justify;
+	        justify-content: space-between; /* JUSTIFY */
 }
+.ff-flex.justify-content-around {
+	justify-content: space-around; /* JUSTIFY */
+}
+
 /* align ITEMS inside CONTENT (cross axis) :
 align-items: flex-start | flex-end | center | baseline | stretch */
-.ff-flex.flex-items-start{
-	align-items: flex-start; /* START */
+.ff-flex.align-items-start {
+	-webkit-box-align: start;
+	        align-items: flex-start; /* START */
 }
-.ff-flex.flex-items-end{
-	align-items: flex-end; /* END) */
+.ff-flex.align-items-end {
+	-webkit-box-align: end;
+	        align-items: flex-end; /* END */
 }
-.ff-flex.flex-items-center{
-	align-items: center; /* CENTER */
+.ff-flex.align-items-center {
+	-webkit-box-align: center;
+	        align-items: center; /* CENTER */
 }
-.ff-flex.flex-items-stretch{
-	align-items: stretch; /* STRETCH */
+.ff-flex.align-items-baseline {
+	-webkit-box-align: baseline;
+	        align-items: baseline; /* BASELINE */
 }
+.ff-flex.align-items-stretch {
+	-webkit-box-align: stretch;
+	        align-items: stretch; /* STRETCH */
+}
+
 /* Flexbox main direction (row vs column) :
 flex-flow: <row | row-reverse | column | column-reverse> | <nowrap | wrap | wrap-reverse> */
 .ff-flex.flex-row{
-	flex-flow: row wrap; /* ROW direction (main axis) */
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	        flex-flow: row wrap; /* ROW direction (main axis) */
 	align-content: flex-start; /*_ only if wrap*/
 }
 .ff-flex.flex-column{
-	flex-flow: column wrap; /* COLUMN direction (cross axis) */
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-flow: column wrap; /* COLUMN direction (cross axis) */
 	align-content: flex-start; /*_ only if wrap*/
 }
-/* align LINES inside Flexbox (main axis) :
+
+/* align row / column LINES inside Flexbox (main axis) :
 align-content: flex-start | flex-end | center | space-between | space-around | stretch */
-.ff-flex.flex-row.align-end,
-.ff-flex.flex-column.align-end{
+.ff-flex.flex-row.align-content-start, .ff-flex.flex-column.align-content-start {
+	align-content: flex-start;
+}
+.ff-flex.flex-row.align-content-end, .ff-flex.flex-column.align-content-end {
 	align-content: flex-end;
 }
-.ff-flex.flex-row.align-center,
-.ff-flex.flex-column.align-center{
+.ff-flex.flex-row.align-content-center, .ff-flex.flex-column.align-content-center {
 	align-content: center;
 }
-.ff-flex.flex-row.align-stretch,
-.ff-flex.flex-column.align-stretch{
+.ff-flex.flex-row.align-content-stretch, .ff-flex.flex-column.align-content-stretch {
 	align-content: stretch;
 }
-.ff-flex.flex-row.align-justify,
-.ff-flex.flex-column.align-justify{
+.ff-flex.flex-row.align-content-between, .ff-flex.flex-column.align-content-between {
 	align-content: space-between;
 }
-/* single item OVERRIDE align-items property
+.ff-flex.flex-row.align-content-around, .ff-flex.flex-column.align-content-around {
+	align-content: space-around;
+}
+
+/* align SINGLE ITEM and override align-items property
 align-self: auto | flex-start | flex-end | center | baseline | stretch */
-.ff-flex > .flex-self-start{
+.ff-flex > .align-self-start {
 	align-self: flex-start; ; /* START */
 }
-.ff-flex > .flex-self-end{
+.ff-flex > .align-self-end {
 	align-self: flex-end; /* END */
 }
-.ff-flex > .flex-self-center{
+.ff-flex > .align-self-center {
 	align-self: center; /* CENTER */
 }
-.ff-flex > .flex-self-stretch{
+.ff-flex > .align-self-stretch {
 	align-self: stretch; /* STRETCH */
 }
+
+/* order ITEMS */
+.ff-flex.order-first {
+  -webkit-box-ordinal-group: 0;
+          order: -1;
+}
+.ff-flex.order-unordered {
+  -webkit-box-ordinal-group: 1;
+          order: 0;
+}
+.ff-flex.order-last {
+  -webkit-box-ordinal-group: 2;
+          order: 1;
+}
+
+/* ----------------------------------------------------------- */
+/*												Flex columns
+/* ----------------------------------------------------------- */
+[class*="col-"] {
+	position: relative;
+	width: 100%;
+}
+.col-1 { /* - 1/12 - */
+  max-width: 8.33333%;
+  -webkit-box-flex: 0;
+  flex: 0 0 8.33333%; }
+
+.col-2 { /* - 2/12 - */
+  max-width: 16.66667%;
+  -webkit-box-flex: 0;
+  flex: 0 0 16.66667%; }
+
+.col-3 { /* - 3/12 - */
+  max-width: 25%;
+  -webkit-box-flex: 0;
+  flex: 0 0 25%; }
+
+.col-4 { /* - 4/12 - */
+  max-width: 33.33333%;
+  -webkit-box-flex: 0;
+  flex: 0 0 33.33333%; }
+
+.col-5 { /* - 5/12 - */
+  max-width: 41.66667%;
+  -webkit-box-flex: 0;
+  flex: 0 0 41.66667%; }
+
+.col-6 { /* - 6/12 - */
+  max-width: 50%;
+  -webkit-box-flex: 0;
+  flex: 0 0 50%; }
+
+.col-7 { /* - 7/12 - */
+  max-width: 58.33333%;
+  -webkit-box-flex: 0;
+  flex: 0 0 58.33333%; }
+
+.col-8 { /* - 8/12 - */
+  max-width: 66.66667%;
+  -webkit-box-flex: 0;
+  flex: 0 0 66.66667%; }
+
+.col-9 { /* - 9/12 - */
+  max-width: 75%;
+  -webkit-box-flex: 0;
+  flex: 0 0 75%; }
+
+.col-10 { /* - 10/12 - */
+  max-width: 83.33333%;
+  -webkit-box-flex: 0;
+  flex: 0 0 83.33333%; }
+
+.col-11 { /* - 11/12 - */
+  max-width: 91.66667%;
+  -webkit-box-flex: 0;
+  flex: 0 0 91.66667%; }
+
+.col-12 { /* - 12/12 - */
+  max-width: 100%;
+  -webkit-box-flex: 0;
+  flex: 0 0 100%; }
 
 /* ----------------------------------------------------------- */
 /*												Grid
@@ -124,7 +238,8 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch */
 }
 
 .ff-grid.justify-content-center{
-	justify-content: center; /* align GRID inside GRID-CONTAINER (main axis) : start | end | center | stretch | space-around | space-between | space-evenly */
+	-webkit-box-pack: center;
+	        justify-content: center; /* align GRID inside GRID-CONTAINER (main axis) : start | end | center | stretch | space-around | space-between | space-evenly */
 }
 .ff-grid.align-content-center{
 	align-content: center; /* align GRID inside GRID-CONTAINER (cross axis) : start | end | center | stretch | space-around | space-between | space-evenl y*/
@@ -134,7 +249,8 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch */
 	justify-items: center; /* align ITEMS inside CELLS (main axis) : start | end | center | stretch */
 }
 .ff-grid.align-items-center{
-	align-items: center; /* align ITEMS inside CELLS (cross axis) : start | end | center | stretch */
+	-webkit-box-align: center;
+	        align-items: center; /* align ITEMS inside CELLS (cross axis) : start | end | center | stretch */
 }
 
 /* GRID ITEMS */
@@ -179,13 +295,13 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch */
 /**
  * FW width/height
  */
-[class^="fw-max-witdh-"], [class*=" fw-max-witdh-"]{ width: 100%; }
-.fw-max-witdh-100{ max-width: 100% }
-.fw-max-witdh-75{ max-width: 75% }
-.fw-max-witdh-50{ max-width: 50% }
-.fw-max-witdh-33{ max-width: 33.333333% }
-.fw-max-witdh-25{ max-width: 25% }
-.fw-max-witdh-20{ max-width: 20% }
+[class^="fw-max-width-"], [class*=" fw-max-width-"]{ width: 100%; }/* toutes class ^ = commence par / * = contient */
+.fw-max-width-100{ max-width: 100% }
+.fw-max-width-75{ max-width: 75% }
+.fw-max-width-50{ max-width: 50% }
+.fw-max-width-33{ max-width: 33.333333% }
+.fw-max-width-25{ max-width: 25% }
+.fw-max-width-20{ max-width: 20% }
 .fw-width-800{ width: 800px; }
 .fw-width-700{ width: 700px; }
 .fw-width-600{ width: 600px; }
