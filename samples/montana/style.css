@@ -335,7 +335,7 @@ nav.main-nav > ul > li.user a:after{
  nav.main-nav > ul > li:not(:last-child){
 		 border: none;
  }
- nav.main-nav.menu-toggle{
+ .toggled nav.main-nav{
 	 left: 0;
  }
 }
@@ -553,11 +553,11 @@ footer{
 /* ----------------------------------------------------------- */
 /*												Responsive
 /* ----------------------------------------------------------- */
-.responsive { display: none; }
+.hide { display: none; }
 
 @media (max-width: 768px) { /* equiv 768px */
-  .responsive { display: block; }
-	.not-responsive { display: none; }
+  .hide { display: block; }
+	.show { display: none; }
 	body::before {
 		content: '';
 	}
