@@ -22,42 +22,59 @@
 	});
 
 	/**
-	 * Menu toggle
+	 * Main Menu (toggle/open/close)
 	 */
-	$('.hamburger-nav').on('click', function(e) {
-		if ($("header").hasClass("toggled")) {
-			$("header").removeClass("toggled");
-		} else {
-			$("header").addClass("toggled");
-		}
+	$(document).ready(function(){
+		$("body").on('click', "*[data-action='toggle-main-menu']", function(e) {
+			if ($("body").hasClass("main-menu-opened")) {
+				$("body").removeClass("main-menu-opened");
+			} else {
+				$("body").addClass("main-menu-opened");
+			}
+			if ($("*[data-item='main-menu']").length > 0) {
+				if ($("*[data-item='main-menu']")){
+					$("*[data-item='main-menu']").removeClass("opened");
+				} else {
+					$("*[data-item='main-menu']").addClass("opened");
+				}
+			}
+		});
+		$("body").on('click', "*[data-action='close-main-menu']", function(e) {
+			$("body").removeClass("main-menu-opened");
+			if ($("*[data-item='main-menu']").length > 0) {
+				$("*[data-item='main-menu']").removeClass("opened");
+			}
+		});
+		$("body").on('click', "*[data-action='open-main-menu']", function(e) {
+			$("body").addClass("main-menu-opened");
+			if ($("*[data-item='main-menu']").length > 0) {
+				$("*[data-item='main-menu']").addClass("opened");
+			}
+		});
+		$("body").on("keydown", function(e) {
+			if (e.keyCode == 13 || e.keyCode == 32) {
+				$("body").removeClass("main-menu-opened");
+				if ($("*[data-item='main-menu']").length > 0) {
+					$("*[data-item='main-menu']").removeClass("opened");
+				}
+			}
+		});
+		$("body").on('click', function(e){
+			if (
+					!$("*[data-action='toggle-main-menu']").is(e.target) && 
+					$("*[data-action='toggle-main-menu']").has(e.target).length === 0 &&
+					!$("*[data-action='close-main-menu']").is(e.target) && 
+					$("*[data-action='close-main-menu']").has(e.target).length === 0 &&
+					!$("*[data-action='open-main-menu']").is(e.target) && 
+					$("*[data-action='open-main-menu']").has(e.target).length === 0 &&
+					!$("*[data-item='main-menu']").is(e.target) && 
+					$("*[data-item='main-menu']").has(e.target).length === 0) {
+				$("body").removeClass("main-menu-opened");
+				if ($("*[data-item='main-menu']").length > 0) {
+					$("*[data-item='main-menu']").removeClass("opened");
+				}
+		    }
+		});
 	});
-
-  $('.close-nav').on('click', function(e) {
-    if ($("header").hasClass("toggled")) {
-      $("header").removeClass("toggled");
-    }
-  });
-
-  /**
-	 * Menu toggle
-	 */
-  document.querySelector("html").classList.add('js');
-
-  var fileInput  = document.querySelector( ".input-file" ),
-      button     = document.querySelector( ".input-file-trigger" ),
-      the_return = document.querySelector(".file-return");
-
-  button.addEventListener( "keydown", function( event ) {
-      if ( event.keyCode == 13 || event.keyCode == 32 ) {
-          fileInput.focus();
-      }
-  });
-  button.addEventListener( "click", function( event ) {
-     fileInput.focus();
-     return false;
-  });
-  fileInput.addEventListener( "change", function( event ) {
-      the_return.innerHTML = this.value;
-  });
 
 })(jQuery);
