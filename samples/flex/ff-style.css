@@ -122,7 +122,7 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 /* align SINGLE ITEM and override align-items property
 align-self: auto | flex-start | flex-end | center | baseline | stretch */
 .ff-flex > .align-self-start {
-	align-self: flex-start; ; /* START */
+	align-self: flex-start; /* START */
 }
 .ff-flex > .align-self-end {
 	align-self: flex-end; /* END */
