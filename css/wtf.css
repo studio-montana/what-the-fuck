@@ -165,10 +165,10 @@ main{
 	max-width: 100%;
 }
 
-.relative{
+.ff-relative{
 	position: relative;
 }
-.absolute{
+.ff-absolute{
 	position: absolute;
 }
 /* ----------------------------------------------------------- */
@@ -211,14 +211,14 @@ main{
 .ff-width33  { width: 33.33333%; }
 .ff-width40  { width: 40%; }
 .ff-width45  { width: 45%; }
-.ff-width50, .half  { width: 50%; }
+.ff-width50, .ff-half  { width: 50%; }
 .ff-width60  { width: 60%; }
 .ff-width66  { width: 66.66667%; }
 .ff-width70  { width: 70%; }
 .ff-width75  { width: 75%; }
 .ff-width80  { width: 80%; }
 .ff-width90  { width: 90%; }
-.ff-width100, .fullwidth { width: 100%; }
+.ff-width100, .ff-fullwidth { width: 100%; }
 .ff-widthauto { width: auto; }
 
 /* ----------------------------------------------------------- */
@@ -347,15 +347,15 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch */
 }
 
 /* order flex ITEMS */
-.order-first {
+.ff-order-first {
 	-webkit-box-ordinal-group: 0;
 	order: -1;
 }
-.order-unordered {
+.ff-order-unordered {
 	-webkit-box-ordinal-group: 1;
 	order: 0;
 }
-.order-last {
+.ff-order-last {
 	-webkit-box-ordinal-group: 2;
 	order: 1;
 }
@@ -367,58 +367,70 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch */
 	position: relative;
 	width: 100%;
 }
-
 .sm-1 {
 	max-width: 8.33333%;
+	-webkit-box-flex: 0;
 	flex: 0 0 8.33333%;
 }
 .sm-2 {
 	max-width: 16.66667%;
+	-webkit-box-flex: 0;
 	flex: 0 0 16.66667%;
 }
 .sm-3 {
 	max-width: 25%;
+	-webkit-box-flex: 0;
 	flex: 0 0 25%;
 }
 .sm-4 {
 	max-width: 33.33333%;
+	-webkit-box-flex: 0;
 	flex: 0 0 33.33333%;
 }
 .sm-5 {
 	max-width: 41.66667%;
+	-webkit-box-flex: 0;
 	flex: 0 0 41.66667%;
 }
 .sm-6 {
 	max-width: 50%;
+	-webkit-box-flex: 0;
 	flex: 0 0 50%;
 }
 .sm-7 {
 	max-width: 58.33333%;
+	-webkit-box-flex: 0;
 	flex: 0 0 58.33333%;
 }
 .sm-8 {
 	max-width: 66.66667%;
+	-webkit-box-flex: 0;
 	flex: 0 0 66.66667%;
 }
 .sm-9 {
 	max-width: 75%;
+	-webkit-box-flex: 0;
 	flex: 0 0 75%;
 }
 .sm-10 {
 	max-width: 83.33333%;
+	-webkit-box-flex: 0;
 	flex: 0 0 83.33333%;
 }
 .sm-11 {
 	max-width: 91.66667%;
+	-webkit-box-flex: 0;
 	flex: 0 0 91.66667%;
 }
 .sm-12 {
 	max-width: 100%;
+	-webkit-box-flex: 0;
 	flex: 0 0 100%;
 }
 
 @media (min-width: 768px) {
 	.md-0{ /* auto-adjust */
+		-webkit-box-flex: 1;
 		flex: 1;
 	}
 	.md-1 {
@@ -485,6 +497,7 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch */
 }
 @media (min-width: 1024px) {
 	.col-0{ /* auto-adjust */
+		-webkit-box-flex: 1;
 		flex: 1;
 	}
 	.col-1 { /* - 1/12 - */

@@ -39,7 +39,7 @@
   });
 
   /**
-	 * Menu toggle
+	 * Input file
 	 */
   document.querySelector("html").classList.add('js');
 
