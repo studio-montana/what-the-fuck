@@ -94,6 +94,40 @@ function indexOf(value, array) {
 	});
 
 	/**
+	 * On Scroll
+	 */
+	$(document).ready(function() {
+    	let last_scroll_position = 0;
+	    $(window).scroll(function() {
+	    	if ($(document).scrollTop() > 200) {
+	    		$('body').addClass('scrolled');
+		    	if ($(document).scrollTop() > last_scroll_position){
+		    		if (($(document).scrollTop() - last_scroll_position) > 30){
+		    			/* user's scrolling up */
+		    			$('body').addClass('scrolled-up');
+		    			$('body').removeClass('scrolled-down');
+		    		}
+	    		}else{
+	    			if ((last_scroll_position - $(document).scrollTop()) > 30){
+	    				/* user's scrolling down */
+		    			$('body').addClass('scrolled-down');
+	    				$('body').removeClass('scrolled-up');
+	    			}
+	    		}
+	    	}else{
+	            $('body').removeClass('scrolled');
+	    	}
+	    	/** scrollto top */
+	        if ($(document).scrollTop() > 600) {
+	            $("*[data-action='scrollto-top']").fadeIn();
+	        }
+	        else {
+	        	$("*[data-action='scrollto-top']").fadeOut();
+	        }
+	    });
+	});
+
+	/**
 	 * Main Menu (toggle/open/close)
 	 */
 	$(document).ready(function(){
